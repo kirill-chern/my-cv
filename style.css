@@ -190,11 +190,13 @@ table {
 }
 
 .about-section__fname {
+  width: 75%;
+  margin-bottom: 20px;
+}
+.section-header {
+  border-bottom: 2px solid white;
   text-align: left;
   font-size: 26px;
-  width: 75%;
-  border-bottom: 2px solid white;
-  margin-bottom: 20px;
 }
 .about-section__main-part > * {
   margin-bottom: 20px;
@@ -251,6 +253,7 @@ table {
 }
 .about-section-skills-list__title {
   margin-bottom: 15px;
+  text-transform: uppercase;
 }
 .about-section-skills-list__level {
   width: 100%;
@@ -262,4 +265,65 @@ table {
   color: azure;
   background-color: rgb(138, 138, 138);
   text-align: center;
+}
+/* footer */
+.contact {
+  margin-top: 50px;
+  padding: 0 20px;
+  padding-top: 30px;
+}
+.contact__header {
+  width: 75%;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  margin-left: -20px;
+}
+.contact-list {
+  display: inline-flex;
+  flex-direction: column;
+}
+.contact-list__item {
+  margin-bottom: 20px;
+}
+.contact-list__item a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+.contact-list__item a img {
+  width: 50px;
+  margin-right: 10px;
+}
+.social-media {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+.social-media a img {
+  width: 50px;
+}
+.feedback {}
+.feedback input[type="text"]{
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 18px;
+}
+.feedback textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 18px;
+  height: 200px;
+}
+.feedback input[type="submit"] {
+  font-size: 20px;
+  background-color: blue;
+  color: aliceblue;
+  border: none;
+  padding: 20px;
 }
