@@ -149,7 +149,7 @@ table {
   height: 100%;
 }
 .nav-list__item {
-  flex: 0 0 25%;
+  flex: 0 0 33.3%;
 }
 .nav-list__item a {
   color: rgba(255, 255, 255, 0.562);
@@ -161,6 +161,7 @@ table {
   height: 100%;
   text-transform: uppercase;
   font-size: 12px;
+  transition: 1s;
 }
 .nav-list__item a:hover,
 .nav-list__item a.active {
@@ -182,7 +183,29 @@ table {
 .header__main-image img {
   max-width: 100%;
   height: auto;
+  transition: 1s;
+}
+.header__main-image img:hover {
   box-shadow: 0 0 50px white;
+}
+@media screen and (min-width: 767px) {
+  .wrapper {
+    padding-left: 10vw;
+  }
+  .nav-list {
+    flex-direction: column;
+  }
+  .nav {
+    height: 100vh;
+    width: 10vw;
+  }
+  .nav-list__item {
+    display: inline-block;
+  }
+  .nav-list__item a {
+    font-size: 20px;
+    border-radius: 10px;
+  }
 }
 /* about-section */
 .about-section {
@@ -284,6 +307,12 @@ table {
 }
 .contact-list__item {
   margin-bottom: 20px;
+  border: 1px solid transparent;
+  transition: 0.5s;
+  border-radius: 30px;
+}
+.contact-list__item:hover {
+  border: 1px solid white;
 }
 .contact-list__item a {
   display: flex;
@@ -304,6 +333,28 @@ table {
 .social-media a img {
   width: 50px;
 }
+.social-media__item {
+  position: relative;
+  border: 5px solid transparent;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.social-media__tooltip {
+  position: absolute;
+  top: 110%;
+  opacity: 0;
+  left: 50%;
+  transform: translate(-50%);
+  color: whitesmoke;
+  text-transform: capitalize;
+  transition: 1s;
+}
+.social-media__item:hover {
+  border: 5px solid wheat;
+}
+.social-media__item:hover .social-media__tooltip  {
+  opacity: 1;
+}
 .feedback {}
 .feedback input[type="text"]{
   display: block;
@@ -323,7 +374,12 @@ table {
 .feedback input[type="submit"] {
   font-size: 20px;
   background-color: blue;
+  opacity: 0.8;
   color: aliceblue;
   border: none;
   padding: 20px;
+  transition: 0.5s;
+}
+.feedback input[type="submit"]:hover {
+  opacity: 1;
 }
