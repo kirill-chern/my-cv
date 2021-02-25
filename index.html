@@ -8,10 +8,10 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header" id="home">
+      <section class="header" id="home">
         <nav class="nav">
           <ul class="nav-list">
-            <li class="nav-list__item"><a href="#home">home</a></li>
+            <li class="nav-list__item"><a class="active" href="#home">home</a></li>
             <li class="nav-list__item"><a href="#about">about</a></li>
             <li class="nav-list__item"><a href="#contact">contact</a></li>
           </ul>
@@ -21,7 +21,7 @@
         <div class="header__main-image">
           <img src="/img/01.png" alt="Creator photo" />
         </div>
-      </header>
+      </section>
       <main>
         <section class="about-section" id="about">
           <h2 class="about-section__fname section-header">Kyrylo Chernyavskyi</h2>
@@ -107,7 +107,7 @@
           </div>
         </section>
       </main>
-      <footer class="contact" id="contact">
+      <section class="contact" id="contact">
         <h2 class="section-header contact__header">
           contact me
         </h2>
@@ -153,7 +153,7 @@
           <textarea type="text" name="message" placeholder="Message" required="required" style="resize: none;"></textarea>
           <input type="submit" value="Send message" />
         </form>
-      </footer>
+      </section>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./script.js"></script>
